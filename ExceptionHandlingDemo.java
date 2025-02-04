@@ -1,7 +1,7 @@
 public class ExceptionHandlingDemo {
     public static void main(String[] args) {
         try {
-          
+        
             String str = null;
             System.out.println(str.length()); 
         } catch (NullPointerException e) {
@@ -11,9 +11,8 @@ public class ExceptionHandlingDemo {
         }
 
         try {
-   
             int[] numbers = {1, 2, 3};
-            System.out.println(numbers[5]); 
+            System.out.println(numbers[5]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Caught ArrayIndexOutOfBoundsException: " + e.getMessage());
         } finally {
